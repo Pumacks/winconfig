@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  configurationVersion: 0.2.0
+  resources:
+
+# Windows settings
+    - resource: Microsoft.Windows.Developer/WindowsExplorer
+      directives:
+        description: File Explorer settings 
+        allowPrerelease: true
+      settings:
+        FileExtensions: Show
+        HiddenFiles: Show
+        
+    - resource: Microsoft.Windows.Developer/Taskbar
+      directives:
+        description: Taskbar settings 
+        allowPrerelease: true
+      settings:
+        SearchboxMode: Hide
+        TaskViewButton: Hide
+        WidgetsButton: Hide
+
+    - resource: Microsoft.Windows.Developer/DeveloperMode
+      directives:
+        description: Enable Developer Mode
+        allowPrerelease: true
+      settings:
+        Enable: true
+
+    - resource: Microsoft.Windows.System/Privacy
+      directives:
+        description: Disable unwanted privacy settings
+        allowPrerelease: true
+      settings:
+        AdvertisingID: Disable
+        TailoredExperiences: Disable
+        Location: Disable
+

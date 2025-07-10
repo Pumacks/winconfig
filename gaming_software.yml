@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  configurationVersion: 0.2.0
+  resources:    
+    
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: EpicGames.EpicGamesLauncher
+      directives:
+        description: Install EpicGames.EpicGamesLauncher
+        allowPrerelease: true
+      settings:
+        id: EpicGames.EpicGamesLauncher
+        source: winget
+
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Valve.Steam
+      directives:
+        description: Install Valve.Steam
+        allowPrerelease: true
+      settings:
+        id: Valve.Steam
+        source: winget
+
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Discord.Discord
+      directives:
+        description: Install Discord.Discord
+        allowPrerelease: true
+      settings:
+        id: Discord.Discord
+        source: winget
+        
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Nvidia.GeForceExperience
+      directives:
+        description: Install Nvidia.GeForceExperience
+        allowPrerelease: true
+      settings:
+        id: Nvidia.GeForceExperience
+        source: winget
