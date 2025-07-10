@@ -8,11 +8,11 @@ $mainFunction =
 
     $isAdmin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
 
-    $dscUri = "https://raw.githubusercontent.com/pumacks/setup/main/"
-    $dscGenSoftware = "pumacks.general_software.yml";
-    $dscGamingSoftware = "pumacks.gaming_software.yml";
-    $dscWinSettings = "pumacks.general_settings.yml";
-    $dscDev = "pumacks.dev_software.yml";
+    $dscUri = "https://raw.githubusercontent.com/pumacks/winconfig/main/"
+    $dscGenSoftware = "general_software.yml";
+    $dscGamingSoftware = "gaming_software.yml";
+    $dscWinSettings = "general_settings.yml";
+    $dscDev = "dev_software.yml";
 
     $dscGamingUri = $dscUri + $dscGamingSoftware;
     $dscGenSoftwareUri = $dscUri + $dscGenSoftware 
