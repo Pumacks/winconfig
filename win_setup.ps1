@@ -78,7 +78,7 @@ function GetLatestWinGet
        for ($i = 0; $i -lt $uris.Length; $i++) {
            $filePath = $paths[$i]
            $fileUri = $uris[$i]
-           Write-Host "Downloading: ($filePat) from $fileUri"
+           Write-Host "Downloading: ($filePath) from $fileUri"
            Invoke-WebRequest -Uri $fileUri -OutFile $filePath
        }
 
