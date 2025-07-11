@@ -2,15 +2,6 @@
 properties:
   configurationVersion: 0.2.0
   resources:    
-    
-    - resource: Microsoft.WinGet.DSC/WinGetPackage
-      id: EpicGames.EpicGamesLauncher
-      directives:
-        description: Install EpicGames.EpicGamesLauncher
-        allowPrerelease: true
-      settings:
-        id: EpicGames.EpicGamesLauncher
-        source: winget
 
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       id: Valve.Steam
