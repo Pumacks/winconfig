@@ -27,13 +27,3 @@ properties:
         allowPrerelease: true
       settings:
         Enable: true
-
-    - resource: Microsoft.Windows.System/Privacy
-      directives:
-        description: Disable unwanted privacy settings
-        allowPrerelease: true
-      settings:
-        AdvertisingID: Disable
-        TailoredExperiences: Disable
-        Location: Disable
-
