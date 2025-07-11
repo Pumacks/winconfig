@@ -64,3 +64,11 @@ properties:
       settings:
         id: 7zip.7zip
         source: winget
+
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Mozilla.Firefox
+      directives:
+        description: Install Mozilla.Firefox
+      settings:
+        id: Mozilla.Firefox
+        source: winget
