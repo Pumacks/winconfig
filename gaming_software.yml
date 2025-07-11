@@ -20,12 +20,3 @@ properties:
       settings:
         id: Discord.Discord
         source: winget
-        
-    - resource: Microsoft.WinGet.DSC/WinGetPackage
-      id: Nvidia.GeForceExperience
-      directives:
-        description: Install Nvidia.GeForceExperience
-        allowPrerelease: true
-      settings:
-        id: Nvidia.GeForceExperience
-        source: winget
